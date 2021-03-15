@@ -1,17 +1,2 @@
 /* CSS Positioning */
 
-#parent_div {
-    width: 400px;
-    height: 400px;
-    background-color: darkred;
-    margin: 100px auto;
-}
-
-#child_div {
-    width: 200px;
-    height: 200px;
-    background-color: darkcyan;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
