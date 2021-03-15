@@ -1,18 +1,12 @@
-/* Basic CSS Selectors Examples */
+/* CSS classes and ID's Examples */
 
-h1 {
-    color: gold;
-    font-size: 45px;
+#main {
+    color: blueviolet;
+    font-size: 25px;
 }
 
-p {
-    background-color: crimson;
-    color: white;
-    font-size: 20px;
-}
-
-div p{
-    background-color: blueviolet;
-    color: white;
+.content {
+    color: crimson;
+    background-color: deepskyblue;
     font-size: 30px;
 }
