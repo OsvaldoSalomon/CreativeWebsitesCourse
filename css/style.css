@@ -1,0 +1,18 @@
+/* Basic CSS Selectors Examples */
+
+h1 {
+    color: gold;
+    font-size: 45px;
+}
+
+p {
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+}
+
+div p{
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+}
