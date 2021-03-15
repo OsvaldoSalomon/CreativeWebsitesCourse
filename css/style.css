@@ -1,12 +1,12 @@
-/* CSS classes and ID's Examples */
+/* CSS Box Model Example */
 
-#main {
-    color: blueviolet;
-    font-size: 25px;
+h1 {
+    width: 250px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+           /*Top Right Bottom Left*/
+    border: 5px solid darkorange;
+    margin: 20px 10px 60px 40px;
+           /*Top Right Bottom Left*/
 }
 
-.content {
-    color: crimson;
-    background-color: deepskyblue;
-    font-size: 30px;
-}
