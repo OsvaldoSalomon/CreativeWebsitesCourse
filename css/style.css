@@ -1,12 +1,17 @@
-/* CSS Box Model Example */
+/* CSS Positioning */
 
-h1 {
-    width: 250px;
-    height: 50px;
-    padding: 10px 10px 10px 10px;
-           /*Top Right Bottom Left*/
-    border: 5px solid darkorange;
-    margin: 20px 10px 60px 40px;
-           /*Top Right Bottom Left*/
+#parent_div {
+    width: 400px;
+    height: 400px;
+    background-color: darkred;
+    margin: 100px auto;
 }
 
+#child_div {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
