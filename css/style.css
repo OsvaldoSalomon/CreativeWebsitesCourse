@@ -1,7 +1,10 @@
-/* Bootstrap Grid Examples */
+/* =============================
+    Default Theme
+    ----------------------------
+    Fonts: Raleway & Open Sans
+   =============================
+ */
 
-.col-bg-red { background-color: red; }
-.col-bg-blue { background-color: dodgerblue; }
-.col-bg-pink { background-color: deeppink; }
-.col-bg-yellow { background-color: yellow; }
-
+h1, p {
+    font-family: "Raleway";
+}
