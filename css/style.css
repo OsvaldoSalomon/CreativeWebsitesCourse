@@ -168,6 +168,13 @@ section {
     font-size: 32px;
     width: 32px;
     height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow-down:hover, #arrow-down:focus {
+    color: #f4c613;
 }
 
 
