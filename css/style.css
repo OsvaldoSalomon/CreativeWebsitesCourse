@@ -345,10 +345,10 @@ ul.social-list li {
 
 ul.social-list li a {
     border: 1px solid #fff;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     display: inline-block;
-    line-height: 35px;
+    line-height: 45px;
     color: #fff;
     border-radius: 50%;
     -webkit-transition: all 400ms linear;
