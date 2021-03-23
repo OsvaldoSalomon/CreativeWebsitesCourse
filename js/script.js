@@ -1,5 +1,5 @@
 /* =================================
-|   |   |   |   |  Preloader
+|   |   |   |   |   Preloader
 ====================================  */
 $(window).on('load', function () { // makes sure that the whole site is loaded
     $('#status').fadeOut();
@@ -7,9 +7,9 @@ $(window).on('load', function () { // makes sure that the whole site is loaded
 });
 
 /* =================================
-|   |   |   |   |  Team
+|   |   |   |   |   Team
 ====================================  */
-$(function(){
+$(function () {
     $("#team-members").owlCarousel({
         items: 2,
         autoplay: true,
@@ -21,3 +21,28 @@ $(function(){
         navText: ['<i class="fa fa-angle-left fa-4x"></i>', '<i class="fa fa-angle-right fa-4x"></i>']
     });
 });
+
+/* =================================
+|   |   |   |   |   Progress Bars
+====================================  */
+$(function () {
+    $("#progress-elements").waypoint(function () {
+        $(".progress-bar").each(function () {
+            $(this).animate({
+                width: $(this).attr("aria-valuenow") + "%"
+            }, 1000);
+        });
+        this.destroy();
+    }, {
+        offset: 'bottom-in-view'
+    });
+});
+
+
+
+
+
+
+
+
+
