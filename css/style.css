@@ -515,6 +515,7 @@ ul.social-list li:nth-child(3) a:hover {
 .service p {
     line-height: normal;
 }
+
 /* =================================
 |   |  Services 02 (Responsive Tabs)
 ====================================  */
@@ -539,6 +540,7 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 0;
     text-decoration: none;
 }
+
 /* Tab active state */
 #services-tabs ul li.r-tabs-state-active a {
     color: #f4c613;
@@ -580,6 +582,7 @@ ul.social-list li:nth-child(3) a:hover {
     line-height: 24px;
     margin-bottom: 30px;
 }
+
 /* =================================
 |    |    |    |   Portfolio
 ====================================  */
@@ -591,11 +594,131 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 0;
 }
 
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
 #isotope-container {
     padding: 0;
 }
 
+/* Filters CSS */
+#isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
 
+#isotope-filters button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-right: 35px;
+    outline: 0;
+}
+
+#isotope-filters button span {
+    display: block;
+    padding-bottom: 5px;
+    -webkit-transition: border-color .4s ease-in-out;
+    transition: border-color .4s ease-in-out;
+}
+
+#isotope-filters button.active span {
+    color: #f4c613;
+    border-bottom: 4px solid #f4c613;
+}
+
+/* Zoom Effect */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.8);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    opacity: 0;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+/* Item Details Effect */
+.portfolio-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.portfolio-item-details h3 {
+    color: #f4c613;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto;
+}
+
+.portfolio-item-details p {
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* Show Overlay on mouse over */
+.portfolio-item:hover .portfolio-item-details h3 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-details p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
 
 
 
