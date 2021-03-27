@@ -44,10 +44,27 @@ $(function () {
     $("#services-tabs").responsiveTabs({
         animation: 'slide'
     });
-})
+});
 
+/* =================================
+|   |   |   |   |   Portfolio
+====================================  */
+$(window).on('load', function () {
+    //Initialize Isotope
+    $("#isotope-container").isotope({
+    });
 
+    //Filter items on button click
+    $("#isotope-filters").on('click', 'button', function () {
+       // get filter value
+       var filterValue = $(this).attr('data-filter');
 
+       //filter portfolio
+        $("#isotope-container").isotope({
+           filter: filterValue
+        });
+    });
+});
 
 
 
