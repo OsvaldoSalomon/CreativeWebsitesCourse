@@ -96,6 +96,19 @@ $(function () {
         navText: ['<i class="fa fa-angle-left fa-4x"></i>', '<i class="fa fa-angle-right fa-4x"></i>']
     });
 });
+/* =================================
+|   |   |   |   |   Stats
+====================================  */
+$(function () {
+    $(".counter").counterUp({
+        delay: 19,
+        time: 2000
+    });
+});
+
+
+
+
 
 
 
