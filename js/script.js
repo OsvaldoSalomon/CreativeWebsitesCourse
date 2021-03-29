@@ -56,7 +56,7 @@ $(window).on('load', function () {
     //Filter items on button click
     $("#isotope-filters").on('click', 'button', function () {
         // get filter value
-        var filterValue = $(this).attr('data-filter');
+        const filterValue = $(this).attr('data-filter');
 
         // filter portfolio
         $("#isotope-container").isotope({
@@ -121,6 +121,28 @@ $(function () {
         navText: ['<i class="fa fa-angle-left fa-4x"></i>', '<i class="fa fa-angle-right fa-4x"></i>']
     });
 });
+
+/* =================================
+|   |   |   |   |   Google Maps
+====================================  */
+// $(window).on('load', function () {
+//     // Map Variables
+//     const addressString = '230 Broadway, NY, New York 10007, USA';
+//     const myLatLng = {lat:40.712742, lng:-74.005966}
+//
+//     //1. Render Map
+//     const map = new google.maps.Map(document.getElementById("map"), {
+//         zoom: 11,
+//         center: myLatLng
+//     });
+//
+//     // 2. Add Marker
+//     const marker = new google.maps.Marker({
+//         position: myLatLng,
+//         map: map
+//     });
+// });
+
 
 
 
