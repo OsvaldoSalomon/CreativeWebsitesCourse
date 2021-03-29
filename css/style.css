@@ -1144,11 +1144,54 @@ footer p span {
     color: #f4c613;
 }
 
+/* =================================
+|    |    |    |   Navigation
+====================================  */
+.navbar {
+    padding: 35px 0 20px 0;
+}
 
+.site-nav-wrapper {
+    padding: 0 85px;
+}
 
+.navbar-brand {
+    padding: 13px 15px;
+}
 
+a.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px;
+}
 
+.nav-link:hover,
+.nav-link:focus {
+    background: none;
+    color: #f4c613;
+}
 
+/* White Navigation */
+.white-nav-top {
+    background: #fff;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top .navbar-nav > a {
+    color: #212226;
+}
+
+.white-nav-top .navbar-nav > a:hover,
+.white-nav-top .navbar-nav > a:focus {
+    color: #f4c613;
+}
 
 
 
