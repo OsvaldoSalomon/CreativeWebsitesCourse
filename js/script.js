@@ -102,7 +102,7 @@ $(function () {
 $(function () {
     $(".counter").counterUp({
         delay: 19,
-        time: 2000
+        time: 3500
     });
 });
 

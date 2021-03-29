@@ -989,9 +989,69 @@ ul.social-list li:nth-child(3) a:hover {
     display: inline-block !important;
 }
 
+/* =================================
+|    |    |    |   Blog
+====================================  */
+#blog {
+    background: #f4f4f4;
+}
 
+#blog-left p {
+    margin: 25px;
+}
 
+#blog-btn a {
+    margin: 0;
+}
 
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.blog-post h4 {
+    line-height: 40px;
+    margin: 0;
+}
+
+.blog-post > p {
+    line-height: 24px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #f4c613;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 350ms linear;
+}
+
+.blog-post a:hover {
+    color: #212226;
+}
+
+.blog-post .post-meta {
+    border-top: 2px solid #e0e0e0;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.blog-post .post-meta p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
 
 
 
