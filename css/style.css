@@ -1198,13 +1198,13 @@ ul.navbar-nav > li > a:focus {
 /* Scroll Spy active state */
 
 .white-nav-top ul.navbar-nav > li > a.active {
-    color: #FFFFFF;
+    color: #f4c613;
     font-weight: 500;
 }
 
-.nav-pills > li > a.active {
-    background-color: #f4c613!important;
-}
+/*.nav-pills > li > a.active {*/
+/*    background-color: #f4c613!important;*/
+/*}*/
 
 
 
