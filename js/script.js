@@ -171,6 +171,24 @@ $(function () {
     }
 });
 
+// Smooth Scrolling
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+        // get section id like #about, #services, #work, #team and etc.
+        const section_id = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top - 64
+        }, 100, "easeInOutExpo");
+    });
+});
+
+
+
+
+
+
+
 
 
 
