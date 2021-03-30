@@ -1161,7 +1161,7 @@ footer p span {
     padding: 13px 15px;
 }
 
-a.nav-link {
+ul.navbar-nav > li > a {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 13px;
@@ -1171,8 +1171,8 @@ a.nav-link {
     margin: 10px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
     background: none;
     color: #f4c613;
 }
@@ -1186,16 +1186,25 @@ a.nav-link {
     z-index: 2;
 }
 
-.white-nav-top .navbar-nav > a {
+.white-nav-top ul.navbar-nav > li > a {
     color: #212226;
 }
 
-.white-nav-top .navbar-nav > a:hover,
-.white-nav-top .navbar-nav > a:focus {
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top ul.navbar-nav > li > a:focus {
     color: #f4c613;
 }
 
+/* Scroll Spy active state */
 
+.white-nav-top ul.navbar-nav > li > a.active {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.nav-pills > li > a.active {
+    background-color: #f4c613!important;
+}
 
 
 
