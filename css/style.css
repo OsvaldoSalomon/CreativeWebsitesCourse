@@ -1149,6 +1149,8 @@ footer p span {
 ====================================  */
 .navbar {
     padding: 35px 0 20px 0;
+    -webkit-transition: all 250ms linear;
+    transition: all 200ms linear;
 }
 
 .site-nav-wrapper {

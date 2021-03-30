@@ -143,12 +143,33 @@ $(function () {
 //     });
 // });
 
+/* =================================
+|   |   |   |   |   Navigation
+====================================  */
 
+/* Show & Hide White Navigation */
+$(function () {
+    // Show/Hide nav on page load
+    showHideNav();
 
+    $(window).scroll(function () {
+        // Show/Hide nav on window's scroll
+        showHideNav();
+    });
 
+    function showHideNav() {
+        if ($(window).scrollTop() > 50) {
+            $("nav").addClass("white-nav-top");
+            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            $("#back-to-top").fadeIn();
 
-
-
+        } else {
+            $("nav").removeClass("white-nav-top");
+            $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            $("#back-to-top").fadeOut();
+        }
+    }
+});
 
 
 
