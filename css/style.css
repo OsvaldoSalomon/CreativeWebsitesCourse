@@ -42,7 +42,7 @@ section {
 |   |   |   |   |  Preloader
 ====================================  */
 #preloader {
-    background-color: white;
+    background-color: #fff;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -234,7 +234,8 @@ section {
     text-transform: uppercase;
     word-spacing: 9px;
     display: inline-block;
-    transform: rotate(270deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     position: relative;
     top: 60px;
     left: -53px;
@@ -291,7 +292,7 @@ section {
 .about-item {
     background-color: #fff;
     padding: 90px 30px;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
@@ -308,7 +309,7 @@ section {
 .about-item hr {
     width: 45px;
     height: 3px;
-    color: #f4c613;
+    background-color: #f4c613;
     margin: 0 auto;
     border: none;
 }
@@ -329,7 +330,7 @@ section {
 }
 
 .about-item:hover hr {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .about-item:hover i {
@@ -687,7 +688,7 @@ ul.social-list li:nth-child(3) a:hover {
     right: 0;
     background: rgba(14, 14, 17, 0.8);
     cursor: -webkit-zoom-in;
-    cursor: zoom-in;
+    cursor: pointer;
     opacity: 0;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
@@ -786,7 +787,14 @@ ul.social-list li:nth-child(3) a:hover {
 
 .testimonial .stars {
     font-size: 20px;
-    margin: 5px 0 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .author .author-name-des {
@@ -848,7 +856,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .pricing-table .price h2 span.month {
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 400;
     position: absolute;
     left: 5px;
@@ -955,7 +963,7 @@ ul.social-list li:nth-child(3) a:hover {
     transition: all 350ms linear;
 }
 
-.stats-item h1 {
+.stats-item h3 {
     font-size: 32px;
     color: #fff;
     margin: 5px 0 5px 0;
@@ -1167,7 +1175,7 @@ footer p span {
 }
 
 .navbar-brand {
-    padding: 13px 15px;
+    padding: 15px 15px;
 }
 
 ul.navbar-nav > li > a {
@@ -1178,6 +1186,7 @@ ul.navbar-nav > li > a {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 10px;
+    text-decoration: none;
 }
 
 ul.navbar-nav > li > a:hover,
@@ -1189,7 +1198,7 @@ ul.navbar-nav > li > a:focus {
 /* White Navigation */
 .white-nav-top {
     background: #fff;
-    padding: 10px 0;
+    padding: 17px 0;
     -webkit-box-shadow: 0 8px 6px -9px #999;
     box-shadow: 0 8px 6px -9px #999;
     z-index: 2;
@@ -1211,9 +1220,41 @@ ul.navbar-nav > li > a:focus {
     font-weight: 500;
 }
 
-/*.nav-pills > li > a.active {*/
-/*    background-color: #f4c613!important;*/
-/*}*/
 
+/* =========================================
+                Animation
+============================================ */
 
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
 
+#home-heading-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#home-heading-2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#home-text {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+#arrow-down i {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
