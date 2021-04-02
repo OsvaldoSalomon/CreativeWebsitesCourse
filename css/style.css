@@ -1,7 +1,7 @@
 /* =========================================
     Default Theme
     ----------------------------------------
-    Fonts: Raleway & Open Sans
+    Fonts: Montserrat & Open Sans
     ----------------------------------------
     Colors:
         Moon Yellow:         #f4c613
@@ -40,7 +40,6 @@ section {
     overflow: hidden;
 }
 
-
 /* =========================================
                 Preloader
 ============================================ */
@@ -66,7 +65,6 @@ section {
     margin-top: -35px;
     margin-left: -35px;
 }
-
 
 /* =========================================
                 Home
@@ -133,7 +131,6 @@ section {
     font-weight: 100;
     margin: 8px 0 30px 0;
 }
-
 
 /* =========================================
                 Buttons
@@ -1109,7 +1106,6 @@ ul.social-list li:nth-child(3) a:hover {
                 Contact
 ============================================ */
 
-
 /* Contact Left */
 
 #contact-left p {
@@ -1174,7 +1170,6 @@ ul.office-details li i {
     min-height: 164px;
 }
 
-
 /* =========================================
                 Google Maps
 ============================================ */
@@ -1216,7 +1211,6 @@ footer p span {
 #navigation-menu {
     padding-left: 650px;
 }
-
 
 ul.navbar-nav > li > a {
     font-family: 'Montserrat', sans-serif;
@@ -1260,7 +1254,6 @@ ul.navbar-nav > li > a:focus {
     color: #f4c613;
     font-weight: 500;
 }
-
 
 /* =========================================
                 Animation

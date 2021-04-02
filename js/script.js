@@ -47,6 +47,7 @@ $(function () {
         offset: 'bottom-in-view'
     });
 });
+
 /* =================================
 |   |   |   |   |   Responsive Tabs
 ====================================  */
@@ -78,6 +79,7 @@ $(window).on('load', function () {
         $(this).addClass('active');
     });
 });
+
 /* =================================
 |   |   |   |   |   Magnifier
 ====================================  */
@@ -106,6 +108,7 @@ $(function () {
         navText: ['<i class="fa fa-angle-left fa-4x"></i>', '<i class="fa fa-angle-right fa-4x"></i>']
     });
 });
+
 /* =================================
 |   |   |   |   |   Stats
 ====================================  */
@@ -145,33 +148,6 @@ $(function () {
         }
     });
 });
-
-
-/* =================================
-|   |   |   |   |   Google Maps
-====================================  */
-// $(window).on('load', function () {
-    // Map Variables
-    // const addressString = '230 Broadway, NY, New York 10007, USA';
-    // const myLatLng = {lat:40.712742, lng:-74.005966}
-
-    // 1. Render Map
-    // const map = new google.maps.Map(document.getElementById("map"), {
-    //     zoom: 11,
-    //     center: myLatLng
-    // }, window.initMap = this.initMap);
-
-    // renderMap = () => {
-    //     loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyASzMUp63LYB2nGomTuuD32fsHqd30MWyU&callback=initMap&libraries=&v=weekly");
-    //     window.initMap = this.initMap;
-    // }
-
-    // 2. Add Marker
-//     const marker = new google.maps.Marker({
-//         position: myLatLng,
-//         map: map
-//     });
-// });
 
 /* =================================
 |   |   |   |   |   Navigation
