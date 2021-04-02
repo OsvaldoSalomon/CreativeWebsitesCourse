@@ -111,7 +111,7 @@ $(function () {
 ====================================  */
 $(function () {
     $(".counter").counterUp({
-        delay: 19,
+        delay: 15,
         time: 3500
     });
 });
@@ -146,21 +146,27 @@ $(function () {
     });
 });
 
+
 /* =================================
 |   |   |   |   |   Google Maps
 ====================================  */
 // $(window).on('load', function () {
-//     // Map Variables
-//     const addressString = '230 Broadway, NY, New York 10007, USA';
-//     const myLatLng = {lat:40.712742, lng:-74.005966}
-//
-//     //1. Render Map
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 11,
-//         center: myLatLng
-//     });
-//
-//     // 2. Add Marker
+    // Map Variables
+    // const addressString = '230 Broadway, NY, New York 10007, USA';
+    // const myLatLng = {lat:40.712742, lng:-74.005966}
+
+    // 1. Render Map
+    // const map = new google.maps.Map(document.getElementById("map"), {
+    //     zoom: 11,
+    //     center: myLatLng
+    // }, window.initMap = this.initMap);
+
+    // renderMap = () => {
+    //     loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyASzMUp63LYB2nGomTuuD32fsHqd30MWyU&callback=initMap&libraries=&v=weekly");
+    //     window.initMap = this.initMap;
+    // }
+
+    // 2. Add Marker
 //     const marker = new google.maps.Marker({
 //         position: myLatLng,
 //         map: map
@@ -203,7 +209,8 @@ $(function () {
         const section_id = $(this).attr("href");
         $("html, body").animate({
             scrollTop: $(section_id).offset().top - 64
-        }, 100, "easeInOutExpo");
+        }, 1250, "easeInOutExpo");
+
     });
 });
 
@@ -227,18 +234,18 @@ $(function () {
 /* =========================================
                 Animation
 ============================================ */
-// animate on scroll
-// $(function () {
-//     new WOW().init();
-// });
+//animate on scroll
+$(function () {
+    new WOW().init();
+});
 
 // home animation on page load
-// $(window).on('load', function () {
-//
-//     $("#home-heading-1").addClass("animated fadeInDown");
-//     $("#home-heading-2").addClass("animated fadeInLeft");
-//     $("#home-text").addClass("animated zoomIn");
-//     $("#home-btn").addClass("animated zoomIn");
-//     $("#arrow-down i").addClass("animated fadeInDown infinite");
-//
-// });
+$(window).on('load', function () {
+
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-heading-2").addClass("animated fadeInLeft");
+    $("#home-text").addClass("animated zoomIn");
+    $("#home-btn").addClass("animated zoomIn");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
+
+});
